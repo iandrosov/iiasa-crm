@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YSSP_Funding_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>YSSP Funding Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>USD NMO</fullName>
+                <default>false</default>
+                <label>USD NMO</label>
+            </value>
+            <value>
+                <fullName>DDR NMO</fullName>
+                <default>false</default>
+                <label>DDR NMO</label>
+            </value>
+            <value>
+                <fullName>IIASA</fullName>
+                <default>false</default>
+                <label>IIASA</label>
+            </value>
+            <value>
+                <fullName>IIASA Program</fullName>
+                <default>false</default>
+                <label>IIASA Program</label>
+            </value>
+            <value>
+                <fullName>Example 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Example 1</label>
+            </value>
+            <value>
+                <fullName>Example 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Example 2</label>
+            </value>
+            <value>
+                <fullName>Example 3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Example 3</label>
+            </value>
+            <value>
+                <fullName>Example 4</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Example 4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

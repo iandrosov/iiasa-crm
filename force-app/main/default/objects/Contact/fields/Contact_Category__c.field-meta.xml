@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Contact Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alumni</fullName>
+                <default>false</default>
+                <label>Alumni</label>
+            </value>
+            <value>
+                <fullName>YSSP</fullName>
+                <default>false</default>
+                <label>YSSP</label>
+            </value>
+            <value>
+                <fullName>Postdoc</fullName>
+                <default>false</default>
+                <label>Postdoc</label>
+            </value>
+            <value>
+                <fullName>Donors</fullName>
+                <default>false</default>
+                <label>Donors</label>
+            </value>
+            <value>
+                <fullName>NMO Committee Member</fullName>
+                <default>false</default>
+                <label>NMO Committee Member</label>
+            </value>
+            <value>
+                <fullName>Current Staff</fullName>
+                <default>false</default>
+                <label>Current Staff</label>
+            </value>
+            <value>
+                <fullName>Collaborators</fullName>
+                <default>false</default>
+                <label>Collaborators</label>
+            </value>
+            <value>
+                <fullName>Friends of IIASA</fullName>
+                <default>false</default>
+                <label>Friends of IIASA</label>
+            </value>
+            <value>
+                <fullName>Industry</fullName>
+                <default>false</default>
+                <label>Industry</label>
+            </value>
+            <value>
+                <fullName>NMO Committee</fullName>
+                <default>false</default>
+                <label>NMO Committee</label>
+            </value>
+            <value>
+                <fullName>IIASA Visitor</fullName>
+                <default>false</default>
+                <label>IIASA Visitor</label>
+            </value>
+            <value>
+                <fullName>IIASA Event Attendee</fullName>
+                <default>false</default>
+                <label>IIASA Event Attendee</label>
+            </value>
+            <value>
+                <fullName>Expressed Interest</fullName>
+                <default>false</default>
+                <label>Expressed Interest</label>
+            </value>
+            <value>
+                <fullName>Government Official</fullName>
+                <default>false</default>
+                <label>Government Official</label>
+            </value>
+            <value>
+                <fullName>Alumnus</fullName>
+                <default>false</default>
+                <label>Alumnus</label>
+            </value>
+            <value>
+                <fullName>Guest</fullName>
+                <default>false</default>
+                <label>Guest</label>
+            </value>
+            <value>
+                <fullName>Visitor</fullName>
+                <default>false</default>
+                <label>Visitor</label>
+            </value>
+            <value>
+                <fullName>Travels</fullName>
+                <default>false</default>
+                <label>Travels</label>
+            </value>
+            <value>
+                <fullName>MIS MyExpertise</fullName>
+                <default>false</default>
+                <label>MIS MyExpertise</label>
+            </value>
+            <value>
+                <fullName>Participant</fullName>
+                <default>false</default>
+                <label>Participant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Research_Interests__c</fullName>
+    <externalId>false</externalId>
+    <label>Research Interests</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Energy</fullName>
+                <default>false</default>
+                <label>Energy</label>
+            </value>
+            <value>
+                <fullName>Population</fullName>
+                <default>false</default>
+                <label>Population</label>
+            </value>
+            <value>
+                <fullName>Land Use</fullName>
+                <default>false</default>
+                <label>Land Use</label>
+            </value>
+            <value>
+                <fullName>Water Systems</fullName>
+                <default>false</default>
+                <label>Water Systems</label>
+            </value>
+            <value>
+                <fullName>Biodiversity</fullName>
+                <default>false</default>
+                <label>Biodiversity</label>
+            </value>
+            <value>
+                <fullName>Mathematics</fullName>
+                <default>false</default>
+                <label>Mathematics</label>
+            </value>
+            <value>
+                <fullName>Methodologies</fullName>
+                <default>false</default>
+                <label>Methodologies</label>
+            </value>
+            <value>
+                <fullName>Models</fullName>
+                <default>false</default>
+                <label>Models</label>
+            </value>
+            <value>
+                <fullName>Crowd Sourcing</fullName>
+                <default>false</default>
+                <label>Crowd Sourcing</label>
+            </value>
+            <value>
+                <fullName>Evolution</fullName>
+                <default>false</default>
+                <label>Evolution</label>
+            </value>
+            <value>
+                <fullName>Ecology</fullName>
+                <default>false</default>
+                <label>Ecology</label>
+            </value>
+            <value>
+                <fullName>Risk</fullName>
+                <default>false</default>
+                <label>Risk</label>
+            </value>
+            <value>
+                <fullName>Greenhouse Gases</fullName>
+                <default>false</default>
+                <label>Greenhouse Gases</label>
+            </value>
+            <value>
+                <fullName>Climate</fullName>
+                <default>false</default>
+                <label>Climate</label>
+            </value>
+            <value>
+                <fullName>Arctic Systems</fullName>
+                <default>false</default>
+                <label>Arctic Systems</label>
+            </value>
+            <value>
+                <fullName>Tropical Systems</fullName>
+                <default>false</default>
+                <label>Tropical Systems</label>
+            </value>
+            <value>
+                <fullName>Boreal Systems</fullName>
+                <default>false</default>
+                <label>Boreal Systems</label>
+            </value>
+            <value>
+                <fullName>Forestry</fullName>
+                <default>false</default>
+                <label>Forestry</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Aging</fullName>
+                <default>false</default>
+                <label>Aging</label>
+            </value>
+            <value>
+                <fullName>Migration</fullName>
+                <default>false</default>
+                <label>Migration</label>
+            </value>
+            <value>
+                <fullName>International Development</fullName>
+                <default>false</default>
+                <label>International Development</label>
+            </value>
+            <value>
+                <fullName>Ecosystems</fullName>
+                <default>false</default>
+                <label>Ecosystems</label>
+            </value>
+            <value>
+                <fullName>Negotiation</fullName>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>Science Diplomacy</fullName>
+                <default>false</default>
+                <label>Science Diplomacy</label>
+            </value>
+            <value>
+                <fullName>Technology</fullName>
+                <default>false</default>
+                <label>Technology</label>
+            </value>
+            <value>
+                <fullName>Decision Science</fullName>
+                <default>false</default>
+                <label>Decision Science</label>
+            </value>
+            <value>
+                <fullName>Dynamic Systems</fullName>
+                <default>false</default>
+                <label>Dynamic Systems</label>
+            </value>
+            <value>
+                <fullName>Agricultural Systems</fullName>
+                <default>false</default>
+                <label>Agricultural Systems</label>
+            </value>
+            <value>
+                <fullName>Policy Impacts</fullName>
+                <default>false</default>
+                <label>Policy Impacts</label>
+            </value>
+            <value>
+                <fullName>Economics</fullName>
+                <default>false</default>
+                <label>Economics</label>
+            </value>
+            <value>
+                <fullName>Sociology</fullName>
+                <default>false</default>
+                <label>Sociology</label>
+            </value>
+            <value>
+                <fullName>Policy</fullName>
+                <default>false</default>
+                <label>Policy</label>
+            </value>
+            <value>
+                <fullName>Bridging Science</fullName>
+                <default>false</default>
+                <label>Bridging Science</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
