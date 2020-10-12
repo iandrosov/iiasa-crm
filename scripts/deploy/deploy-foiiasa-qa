@@ -6,6 +6,9 @@ echo "--- START DEPLOYMENT FOR: FOIISA-QA"
 ### PREREQ SETUP
 # Install Volunteers for Salesforce GW package as dependency NOT in FOIIASA
 # https://install.salesforce.org/products/v4s/3.119
+# Organization: Friends of IIASA (00DL00000062QDN)
+# Package: Volunteers for Salesforce (04t1T000000Expx)
+
 
 ## Set Salutations new values to standard Name Compound field
 Amb.
@@ -48,7 +51,6 @@ sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/C_ID__
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Permission_to_retain_contact__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Previous_Email__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Professional_URL__c.field-meta.xml -u FOIIASA-QA --wait 10
-sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Current_Staff__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Alumni__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Research_Interests__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Gender__c.field-meta.xml -u FOIIASA-QA --wait 10
@@ -61,6 +63,7 @@ sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/NMO_Co
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/NMO_Council_Member_Years_update__c.field-meta.xml -u FOIIASA-QA --wait 10
 
 ## YSSP Fields
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Current_Staff__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Funding_Source__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Programme_update__c.field-meta.xml -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP__c.field-meta.xml -u FOIIASA-QA --wait 10
