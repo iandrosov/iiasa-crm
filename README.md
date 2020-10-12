@@ -1,6 +1,9 @@
-# Salesforce App
+# IIASA CRM Salesforce App
 
-This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.
+This guide helps Salesforce admin or developers to get started with this app. Teh app is created as extention to Salesforce NPSP package and requires this base NPSP package as dependency.
+
+Addiotally NPSP Org must also install [Volunteers for Salesforce](https://install.salesforce.org/products/v4s/3.119) GW package as dependency.
+`Package: Volunteers for Salesforce (04t1T000000Expx)`
 
 ## Part 1: Choosing a Development Model
 
