@@ -2,6 +2,8 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
         <headerColor>#7F99D4</headerColor>
+        <logo>iiasalogo</logo>
+        <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>
     <description>Management of your Contacts, Donations, Activities (engagement with Contacts), and Campaigns.</description>
