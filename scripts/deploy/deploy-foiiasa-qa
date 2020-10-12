@@ -1,0 +1,109 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, csdev etc
+
+echo "--- START DEPLOYMENT FOR: FOIISA-QA"
+### PREREQ SETUP
+# Install Volunteers for Salesforce GW package as dependency NOT in FOIIASA
+# https://install.salesforce.org/products/v4s/3.119
+
+## Set Salutations new values to standard Name Compound field
+Amb.
+DDr.
+Dr.
+Her Excellency
+His Excellency
+MMag.
+Mag.
+Prof. Dr.
+
+
+# Push Global Value Set
+#sfdx force:source:retrieve -m GlobalValueSet:IIASA_Years_FZ
+#sfdx force:source:retrieve -m GlobalValueSet:IIASA_Programs_FZ
+
+sfdx force:source:deploy -m GlobalValueSet:IIASA_Programs_FZ -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -m GlobalValueSet:IIASA_Years_FZ -u FOIIASA-QA --wait 10
+
+# Push Fields the -m option will deploy all Case object
+#sfdx force:source:deploy -m CustomField:Case.Instance_URL__c -u FOIIASA-QA --wait 10
+# For single field update use direct file path -p
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Source_FZ__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/IIASA_Programe__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/IIASA_Programs_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/IIASA_Subscriptions__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/IIASA_URL__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Contact_Category__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Years_at_IIASA__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Years_at_IIASA_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Personal_Contact_IIASA__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Positions_at_IIASA__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Affiliated_Country__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Middle_Name__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/LinkedIn_URL__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Goes_By__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/ORCID__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Maggies_Contact__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/C_ID__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Permission_to_retain_contact__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Previous_Email__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Professional_URL__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Current_Staff__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Alumni__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Research_Interests__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Gender__c.field-meta.xml -u FOIIASA-QA --wait 10
+
+## NMO Fields
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/NMO_Committee_Member__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/NMO_Committee_Member_Years_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/NMO_Council_Member__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/NMO_Council_Member_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/NMO_Council_Member_Years_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+
+## YSSP Fields
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Funding_Source__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Programme_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Classbook__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Funding_Opportunity_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Home_Institution__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Programme__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Publication__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Supervisor__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Supervisor_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Year__c.field-meta.xml -u FOIIASA-QA --wait 10
+
+## YSSP Fields
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YYSP_Home_Institution_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+
+## POSTDOC Fields
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/POSTDOC_Programs_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/POSTDOC_Years_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/POSTDOC__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/Postdoc_Funding_Opportunity_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/POSTDOC_Programs__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/POSTDOC_Year__c.field-meta.xml -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/POSTDOC_Years_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+
+
+# Reports
+## 	YSSP_Participation_IyF
+# Pull report adn folder need to add folder and report separate entry
+# sfdx force:source:retrieve -m "Report:Public_Reports, Report:Public_Reports/YSSP_Participation_IyF" -u IIASA --wait 10
+
+# Push Record Types
+sfdx force:source:deploy -m RecordType:Contact.IIASA_Contact -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -m RecordType:Contact.Friends_of_IIASA -u FOIIASA-QA --wait 10
+
+
+# Push Layouts
+sfdx force:source:deploy -m "Layout:Contact-Contact Lightning Layout" -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -m "Layout:Contact-Maggies Updated Contact Lightning Layout" -u FOIIASA-QA --wait 10
+
+# Push Logo Image asset
+sfdx force:source:deploy -m ContentAsset:iiasalogo -u FOIIASA-QA --wait 10
+
+# Push Custom App
+sfdx force:source:deploy -m CustomApplication:IIASA_CRM_Application -u FOIIASA-QA --wait 10
+
+echo "--- END DEPLOYMENT FOR: FOIIASA"

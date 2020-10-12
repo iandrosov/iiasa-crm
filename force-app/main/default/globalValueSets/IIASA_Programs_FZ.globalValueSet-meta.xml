@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Air Quality &amp; Greenhouse Gases</fullName>
+        <default>false</default>
+        <label>Air Quality &amp; Greenhouse Gases</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Systems Analysis</fullName>
+        <default>false</default>
+        <label>Advanced Systems Analysis</label>
+    </customValue>
+    <customValue>
+        <fullName>Evolution and Ecology</fullName>
+        <default>false</default>
+        <label>Evolution and Ecology</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy</fullName>
+        <default>false</default>
+        <label>Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Ecosystems Services and Management</fullName>
+        <default>false</default>
+        <label>Ecosystems Services and Management</label>
+    </customValue>
+    <customValue>
+        <fullName>World Population</fullName>
+        <default>false</default>
+        <label>World Population</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk &amp; Resilience</fullName>
+        <default>false</default>
+        <label>Risk &amp; Resilience</label>
+    </customValue>
+    <customValue>
+        <fullName>Transitions to New Technologies</fullName>
+        <default>false</default>
+        <label>Transitions to New Technologies</label>
+    </customValue>
+    <customValue>
+        <fullName>Water</fullName>
+        <default>false</default>
+        <label>Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Acid Rain Program</fullName>
+        <default>false</default>
+        <label>Acid Rain Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Adaption and Optimization</fullName>
+        <default>false</default>
+        <label>Adaption and Optimization</label>
+    </customValue>
+    <customValue>
+        <fullName>Adaptive Dynamics Network</fullName>
+        <default>false</default>
+        <label>Adaptive Dynamics Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Advanced Computer Applications</fullName>
+        <default>false</default>
+        <label>Advanced Computer Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Atmospheric Pollution</fullName>
+        <default>false</default>
+        <label>Atmospheric Pollution</label>
+    </customValue>
+    <customValue>
+        <fullName>Biosphere Dynamics</fullName>
+        <default>false</default>
+        <label>Biosphere Dynamics</label>
+    </customValue>
+    <customValue>
+        <fullName>Clearinghouse and Networking Activities</fullName>
+        <default>false</default>
+        <label>Clearinghouse and Networking Activities</label>
+    </customValue>
+    <customValue>
+        <fullName>Climate Impacts</fullName>
+        <default>false</default>
+        <label>Climate Impacts</label>
+    </customValue>
+    <customValue>
+        <fullName>Comparative Analysis</fullName>
+        <default>false</default>
+        <label>Comparative Analysis</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Integrated Manufacturing</fullName>
+        <default>false</default>
+        <label>Computer Integrated Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Council and External Relations</fullName>
+        <default>false</default>
+        <label>Council and External Relations</label>
+    </customValue>
+    <customValue>
+        <fullName>Decision Analysis and Support</fullName>
+        <default>false</default>
+        <label>Decision Analysis and Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Directorate</fullName>
+        <default>false</default>
+        <label>Directorate</label>
+    </customValue>
+    <customValue>
+        <fullName>Dynamic Systems</fullName>
+        <default>false</default>
+        <label>Dynamic Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>Dynamics and Sustainabilty Program</fullName>
+        <default>false</default>
+        <label>Dynamics and Sustainabilty Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Dynamics of Technology Program</fullName>
+        <default>false</default>
+        <label>Dynamics of Technology Program</label>
+    </customValue>
+    <customValue>
+        <fullName>East/West Joint Ventures</fullName>
+        <default>false</default>
+        <label>East/West Joint Ventures</label>
+    </customValue>
+    <customValue>
+        <fullName>Economic Reform and Integration</fullName>
+        <default>false</default>
+        <label>Economic Reform and Integration</label>
+    </customValue>
+    <customValue>
+        <fullName>Economic Structural Change Program</fullName>
+        <default>false</default>
+        <label>Economic Structural Change Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Economic Transition</fullName>
+        <default>false</default>
+        <label>Economic Transition</label>
+    </customValue>
+    <customValue>
+        <fullName>Economic Transition and Integration</fullName>
+        <default>false</default>
+        <label>Economic Transition and Integration</label>
+    </customValue>
+    <customValue>
+        <fullName>Energy Program</fullName>
+        <default>false</default>
+        <label>Energy Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Environment Program</fullName>
+        <default>false</default>
+        <label>Environment Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Environment Program - Core</fullName>
+        <default>false</default>
+        <label>Environment Program - Core</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Change &amp; Development</fullName>
+        <default>false</default>
+        <label>Environmental Change &amp; Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Monitoring Activity</fullName>
+        <default>false</default>
+        <label>Environmental Monitoring Activity</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmentally Compatible Energy Strategies</fullName>
+        <default>false</default>
+        <label>Environmentally Compatible Energy Strategies</label>
+    </customValue>
+    <customValue>
+        <fullName>Exploratory Program</fullName>
+        <default>false</default>
+        <label>Exploratory Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Exploratory and Special projects</fullName>
+        <default>false</default>
+        <label>Exploratory and Special projects</label>
+    </customValue>
+    <customValue>
+        <fullName>Flexible Manufacturing</fullName>
+        <default>false</default>
+        <label>Flexible Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Food and Agriculture</fullName>
+        <default>false</default>
+        <label>Food and Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Forest Sector Program</fullName>
+        <default>false</default>
+        <label>Forest Sector Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Forestry</fullName>
+        <default>false</default>
+        <label>Forestry</label>
+    </customValue>
+    <customValue>
+        <fullName>General Research</fullName>
+        <default>false</default>
+        <label>General Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Greenhouse Gas Initiative</fullName>
+        <default>false</default>
+        <label>Greenhouse Gas Initiative</label>
+    </customValue>
+    <customValue>
+        <fullName>Health and Global Change</fullName>
+        <default>false</default>
+        <label>Health and Global Change</label>
+    </customValue>
+    <customValue>
+        <fullName>Human Settlements and Services Area</fullName>
+        <default>false</default>
+        <label>Human Settlements and Services Area</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Metabolism</fullName>
+        <default>false</default>
+        <label>Industrial Metabolism</label>
+    </customValue>
+    <customValue>
+        <fullName>Institute Scholars</fullName>
+        <default>false</default>
+        <label>Institute Scholars</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated Modeling Environment</fullName>
+        <default>false</default>
+        <label>Integrated Modeling Environment</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrative and Special Studies</fullName>
+        <default>false</default>
+        <label>Integrative and Special Studies</label>
+    </customValue>
+    <customValue>
+        <fullName>Interactive Decision Analysis Program</fullName>
+        <default>false</default>
+        <label>Interactive Decision Analysis Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Intergrated Energy Systems Activity</fullName>
+        <default>false</default>
+        <label>Intergrated Energy Systems Activity</label>
+    </customValue>
+    <customValue>
+        <fullName>International Environmental Commitments</fullName>
+        <default>false</default>
+        <label>International Environmental Commitments</label>
+    </customValue>
+    <customValue>
+        <fullName>International Forum</fullName>
+        <default>false</default>
+        <label>International Forum</label>
+    </customValue>
+    <customValue>
+        <fullName>Large International Rivers Program</fullName>
+        <default>false</default>
+        <label>Large International Rivers Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Library</fullName>
+        <default>false</default>
+        <label>Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Management Coordination and Development</fullName>
+        <default>false</default>
+        <label>Management Coordination and Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Management and Technological Change Program</fullName>
+        <default>false</default>
+        <label>Management and Technological Change Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Management and Technology Area</fullName>
+        <default>false</default>
+        <label>Management and Technology Area</label>
+    </customValue>
+    <customValue>
+        <fullName>Methodology of Decision Analysis</fullName>
+        <default>false</default>
+        <label>Methodology of Decision Analysis</label>
+    </customValue>
+    <customValue>
+        <fullName>Mineral Trade and Markets</fullName>
+        <default>false</default>
+        <label>Mineral Trade and Markets</label>
+    </customValue>
+    <customValue>
+        <fullName>Mitigation of Air Pollution</fullName>
+        <default>false</default>
+        <label>Mitigation of Air Pollution</label>
+    </customValue>
+    <customValue>
+        <fullName>Modeling Land-Use and Land-Cover Changes</fullName>
+        <default>false</default>
+        <label>Modeling Land-Use and Land-Cover Changes</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Catastrophes and Developing Countries</fullName>
+        <default>false</default>
+        <label>Natural Catastrophes and Developing Countries</label>
+    </customValue>
+    <customValue>
+        <fullName>New Feasibility Studies</fullName>
+        <default>false</default>
+        <label>New Feasibility Studies</label>
+    </customValue>
+    <customValue>
+        <fullName>Optimization under Uncertainty</fullName>
+        <default>false</default>
+        <label>Optimization under Uncertainty</label>
+    </customValue>
+    <customValue>
+        <fullName>Population and Climate Change</fullName>
+        <default>false</default>
+        <label>Population and Climate Change</label>
+    </customValue>
+    <customValue>
+        <fullName>Postdoctoral Scholars</fullName>
+        <default>false</default>
+        <label>Postdoctoral Scholars</label>
+    </customValue>
+    <customValue>
+        <fullName>Processes of International Negotiation Network</fullName>
+        <default>false</default>
+        <label>Processes of International Negotiation Network</label>
+    </customValue>
+    <customValue>
+        <fullName>Radiation Safety of the Biosphere</fullName>
+        <default>false</default>
+        <label>Radiation Safety of the Biosphere</label>
+    </customValue>
+    <customValue>
+        <fullName>Regional Issues Program</fullName>
+        <default>false</default>
+        <label>Regional Issues Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Regional Water Policies</fullName>
+        <default>false</default>
+        <label>Regional Water Policies</label>
+    </customValue>
+    <customValue>
+        <fullName>Resources and Environment Area</fullName>
+        <default>false</default>
+        <label>Resources and Environment Area</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk Analysis and Policy</fullName>
+        <default>false</default>
+        <label>Risk Analysis and Policy</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk and Vulnerability</fullName>
+        <default>false</default>
+        <label>Risk and Vulnerability</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk, Modeling and Society</fullName>
+        <default>false</default>
+        <label>Risk, Modeling and Society</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk, Modeling, Policy</fullName>
+        <default>false</default>
+        <label>Risk, Modeling, Policy</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk, Policy and Vulnerability</fullName>
+        <default>false</default>
+        <label>Risk, Policy and Vulnerability</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk, Policy, and Complexity</fullName>
+        <default>false</default>
+        <label>Risk, Policy, and Complexity</label>
+    </customValue>
+    <customValue>
+        <fullName>Risk, Uncertainty, and Complexity</fullName>
+        <default>false</default>
+        <label>Risk, Uncertainty, and Complexity</label>
+    </customValue>
+    <customValue>
+        <fullName>Science &amp; Technology Program</fullName>
+        <default>false</default>
+        <label>Science &amp; Technology Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Secretariat</fullName>
+        <default>false</default>
+        <label>Secretariat</label>
+    </customValue>
+    <customValue>
+        <fullName>Social &amp; Environmental Dimensions of Technology</fullName>
+        <default>false</default>
+        <label>Social &amp; Environmental Dimensions of Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Security Reform</fullName>
+        <default>false</default>
+        <label>Social Security Reform</label>
+    </customValue>
+    <customValue>
+        <fullName>Sustainable Rural Development</fullName>
+        <default>false</default>
+        <label>Sustainable Rural Development</label>
+    </customValue>
+    <customValue>
+        <fullName>System and Decision Sciences - Core</fullName>
+        <default>false</default>
+        <label>System and Decision Sciences - Core</label>
+    </customValue>
+    <customValue>
+        <fullName>Technological and Economic Dynamics</fullName>
+        <default>false</default>
+        <label>Technological and Economic Dynamics</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology, Economy, Society</fullName>
+        <default>false</default>
+        <label>Technology, Economy, Society</label>
+    </customValue>
+    <customValue>
+        <fullName>Theory of Manufacturing</fullName>
+        <default>false</default>
+        <label>Theory of Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Transboundary Air Pollution</fullName>
+        <default>false</default>
+        <label>Transboundary Air Pollution</label>
+    </customValue>
+    <customValue>
+        <fullName>Young Scientists Summer Program</fullName>
+        <default>false</default>
+        <label>Young Scientists Summer Program</label>
+    </customValue>
+    <description>A list of all IIASA Research Programs</description>
+    <masterLabel>IIASA Programs_FZ</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
