@@ -102,6 +102,9 @@ sfdx force:source:deploy -m RecordType:Contact.Friends_of_IIASA -u FOIIASA-QA --
 # Push Layouts
 sfdx force:source:deploy -m "Layout:Contact-Contact Lightning Layout" -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -m "Layout:Contact-Maggies Updated Contact Lightning Layout" -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -m "Layout:Contact-Updated Contact Lightning Layout" -u FOIIASA-QA --wait 10
+
+# sfdx force:source:retrieve -m "Layout:Contact-Updated Contact Lightning Layout" -u DEV-IIASA --wait 10
 
 # Push Logo Image asset
 sfdx force:source:deploy -m ContentAsset:iiasalogo -u FOIIASA-QA --wait 10
