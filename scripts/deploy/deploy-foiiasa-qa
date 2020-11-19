@@ -23,6 +23,7 @@ sfdx force:package:install -p 04t0N000001E2L5 -u FOIIASA-QA --wait 10
 #Mag.
 #Prof. Dr.
 
+#sfdx force:source:retrieve -m CustomField:Contact.Current_IIASA_Staff__c -u FOIIASA-QA --wait 10
 
 # Push Global Value Set
 #sfdx force:source:retrieve -m GlobalValueSet:IIASA_Years_FZ
@@ -115,4 +116,10 @@ sfdx force:source:deploy -m ContentAsset:iiasalogo -u FOIIASA-QA --wait 10
 # Push Custom App
 sfdx force:source:deploy -m CustomApplication:IIASA_CRM_Application -u FOIIASA-QA --wait 10
 
-echo "--- END DEPLOYMENT FOR: FOIIASA"
+# Permission set
+sfdx force:source:deploy -m PermissionSet:IIASA_App_Permissions -u FOIIASA-QA --wait 10
+
+##sfdx force:source:retrieve -m PermissionSet:IIASA_App_Permissions -u FOIIASA-QA --wait 10
+
+
+echo "--- END DEPLOYMENT FOR: FOIIASA-QA"
