@@ -8,18 +8,28 @@ echo "--- START DEPLOYMENT FOR: FOIISA-QA"
 # https://install.salesforce.org/products/v4s/3.119
 # Organization: Friends of IIASA (00DL00000062QDN)
 # Package: Volunteers for Salesforce (04t1T000000Expx)
+sfdx force:package:install -p 04t0N000001E2L5 -u FOIIASA-QA --wait 10
+# sfdx force:package:install -p 04t1T000000Expx -u FOIIASA --wait 10
 
-
+## !!! This step must be done in Classic
+# This article how to do this: https://help.salesforce.com/articleView?id=000352514&language=en_US&mode=1&type=1
 ## Set Salutations new values to standard Name Compound field
-Amb.
-DDr.
-Dr.
-Her Excellency
-His Excellency
-MMag.
-Mag.
-Prof. Dr.
+#Amb.
+#DDr.
+#Dr.
+#Her Excellency
+#His Excellency
+#MMag.
+#Mag.
+#Prof. Dr.
 
+#sfdx force:source:retrieve -m CustomField:Contact.Current_IIASA_Staff__c -u FOIIASA-QA --wait 10
+sfdx force:source:retrieve -m CustomField:Contact.IIASA_Alumni__c -u FOIIASA-QA --wait 10
+sfdx force:source:retrieve -m CustomField:Contact.IIASA_Program__c -u FOIIASA-QA --wait 10
+sfdx force:source:retrieve -m CustomField:Contact.US_Committee_for_IIASA_Member__c -u FOIIASA-QA --wait 10
+sfdx force:source:retrieve -m CustomField:Contact.YSSP_Home_Institution_update__c -u FOIIASA-QA --wait 10
+sfdx force:source:retrieve -m CustomField:Contact.YSSP_Program__c -u FOIIASA-QA --wait 10
+sfdx force:source:retrieve -m CustomField:Contact.YSSP_Program_update__c -u FOIIASA-QA --wait 10
 
 # Push Global Value Set
 #sfdx force:source:retrieve -m GlobalValueSet:IIASA_Years_FZ
@@ -77,7 +87,7 @@ sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_S
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YSSP_Year__c.field-meta.xml -u FOIIASA-QA --wait 10
 
 ## YSSP Fields
-sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YYSP_Home_Institution_update__c.field-meta.xml -u FOIIASA-QA --wait 10
+#sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/YYSP_Home_Institution_update__c.field-meta.xml -u FOIIASA-QA --wait 10
 
 ## POSTDOC Fields
 sfdx force:source:deploy -p force-app/main/default/objects/Contact/fields/POSTDOC_Programs_update__c.field-meta.xml -u FOIIASA-QA --wait 10
@@ -102,6 +112,9 @@ sfdx force:source:deploy -m RecordType:Contact.Friends_of_IIASA -u FOIIASA-QA --
 # Push Layouts
 sfdx force:source:deploy -m "Layout:Contact-Contact Lightning Layout" -u FOIIASA-QA --wait 10
 sfdx force:source:deploy -m "Layout:Contact-Maggies Updated Contact Lightning Layout" -u FOIIASA-QA --wait 10
+sfdx force:source:deploy -m "Layout:Contact-Updated Contact Lightning Layout" -u FOIIASA-QA --wait 10
+
+# sfdx force:source:retrieve -m "Layout:Contact-Updated Contact Lightning Layout" -u DEV-IIASA --wait 10
 
 # Push Logo Image asset
 sfdx force:source:deploy -m ContentAsset:iiasalogo -u FOIIASA-QA --wait 10
@@ -109,4 +122,10 @@ sfdx force:source:deploy -m ContentAsset:iiasalogo -u FOIIASA-QA --wait 10
 # Push Custom App
 sfdx force:source:deploy -m CustomApplication:IIASA_CRM_Application -u FOIIASA-QA --wait 10
 
-echo "--- END DEPLOYMENT FOR: FOIIASA"
+# Permission set
+sfdx force:source:deploy -m PermissionSet:IIASA_App_Permissions -u FOIIASA-QA --wait 10
+
+##sfdx force:source:retrieve -m PermissionSet:IIASA_App_Permissions -u FOIIASA-QA --wait 10
+
+
+echo "--- END DEPLOYMENT FOR: FOIIASA-QA"

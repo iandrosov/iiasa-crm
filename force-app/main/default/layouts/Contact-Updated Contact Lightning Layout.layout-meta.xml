@@ -54,11 +54,7 @@
                 <field>Positions_at_IIASA__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Source_FZ__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Edit</behavior>
                 <field>ORCID__c</field>
             </layoutItems>
             <layoutItems>
@@ -98,6 +94,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Permission_to_retain_contact__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Source_FZ__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -599,6 +599,15 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <fields>ACCOUNT.NAME</fields>
+        <fields>ACCOUNT.RECORDTYPE</fields>
+        <fields>ACCOUNT.TYPE</fields>
+        <fields>ACCOUNT.ADDRESS1_CITY</fields>
+        <fields>ACCOUNT.PHONE1</fields>
+        <fields>npo02__TotalOppAmount__c</fields>
+        <relatedList>Account.npe01__One2OneContact__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>npe4__RelatedContact__c</fields>
         <fields>npe4__Relationship_Explanation__c</fields>
         <fields>npe4__Type__c</fields>
@@ -721,7 +730,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h5E000000efmq</masterLabel>
+        <masterLabel>00h5E000000eekt</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

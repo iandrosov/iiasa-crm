@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Committee_for_IIASA_Member__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Present or past member of the US Committee for IIASA</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Present or past member of the US Committee for IIASA</inlineHelpText>
+    <label>US Committee for IIASA Member</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>
