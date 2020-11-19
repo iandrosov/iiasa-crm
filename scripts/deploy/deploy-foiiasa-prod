@@ -1,0 +1,43 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, csdev etc
+
+echo "--- START DEPLOYMENT FOR: FOIISA"
+### PREREQ SETUP
+# Install Volunteers for Salesforce GW package as dependency NOT in FOIIASA
+# https://install.salesforce.org/products/v4s/3.119
+# Organization: Friends of IIASA (00DL00000062QDN)
+# Package: Volunteers for Salesforce (04t1T000000Expx)
+## sfdx force:package:install -p 04t0N000001E2L5 -u FOIIASA --wait 10
+
+# Clean metadata directory
+rm -R metadata
+mkdir metadata
+
+# Convert DX source to metadata
+sfdx force:source:convert -r force-app -d metadata
+
+# Delete Account object
+rm metadata/objects/Account.object
+
+# Convert metadata Back to DX source
+# sfdx force:mdapi:convert -r metadata -d force-app
+
+## !!! This step must be done in Classic
+# This article how to do this: https://help.salesforce.com/articleView?id=000352514&language=en_US&mode=1&type=1
+## Set Salutations new values to standard Name Compound field
+#Amb.
+#DDr.
+#Dr.
+#Her Excellency
+#His Excellency
+#MMag.
+#Mag.
+#Prof. Dr.
+
+# Check only deployment to PROD
+sfdx force:mdapi:deploy -d metadata -u FOIIASA -c -l RunLocalTests
+
+
+
+echo "--- END DEPLOYMENT FOR: FOIIASA"

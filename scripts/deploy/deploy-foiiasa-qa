@@ -8,17 +8,20 @@ echo "--- START DEPLOYMENT FOR: FOIISA-QA"
 # https://install.salesforce.org/products/v4s/3.119
 # Organization: Friends of IIASA (00DL00000062QDN)
 # Package: Volunteers for Salesforce (04t1T000000Expx)
+sfdx force:package:install -p 04t0N000001E2L5 -u FOIIASA-QA --wait 10
+# sfdx force:package:install -p 04t1T000000Expx -u FOIIASA --wait 10
 
-
+## !!! This step must be done in Classic
+# This article how to do this: https://help.salesforce.com/articleView?id=000352514&language=en_US&mode=1&type=1
 ## Set Salutations new values to standard Name Compound field
-Amb.
-DDr.
-Dr.
-Her Excellency
-His Excellency
-MMag.
-Mag.
-Prof. Dr.
+#Amb.
+#DDr.
+#Dr.
+#Her Excellency
+#His Excellency
+#MMag.
+#Mag.
+#Prof. Dr.
 
 
 # Push Global Value Set
