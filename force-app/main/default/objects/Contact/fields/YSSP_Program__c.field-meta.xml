@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>npo02__SYSTEM_CUSTOM_NAMING__c</fullName>
-    <deprecated>false</deprecated>
+    <fullName>YSSP_Program__c</fullName>
     <externalId>false</externalId>
-    <inlineHelpText>For Household Accounts, specifies which name related fields should not be automatically populated by the Householding code.</inlineHelpText>
-    <label>_SYSTEM: CUSTOM NAMING</label>
+    <label>YSSP Program</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <type>MultiselectPicklist</type>
     <valueSet>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Name</fullName>
+                <fullName>Example 1</fullName>
                 <default>false</default>
-                <label>Name</label>
+                <label>Example 1</label>
             </value>
             <value>
-                <fullName>Formal_Greeting__c</fullName>
+                <fullName>Example 2</fullName>
                 <default>false</default>
-                <label>Formal_Greeting__c</label>
+                <label>Example 2</label>
             </value>
             <value>
-                <fullName>Informal_Greeting__c</fullName>
+                <fullName>Example 3</fullName>
                 <default>false</default>
-                <label>Informal_Greeting__c</label>
+                <label>Example 3</label>
             </value>
         </valueSetDefinition>
     </valueSet>
-    <visibleLines>3</visibleLines>
+    <visibleLines>4</visibleLines>
 </CustomField>

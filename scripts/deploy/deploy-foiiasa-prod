@@ -18,7 +18,7 @@ mkdir metadata
 sfdx force:source:convert -r force-app -d metadata
 
 # Delete Account object
-rm metadata/objects/Account.object
+##rm metadata/objects/Account.object
 
 # Convert metadata Back to DX source
 # sfdx force:mdapi:convert -r metadata -d force-app
@@ -38,6 +38,6 @@ rm metadata/objects/Account.object
 # Check only deployment to PROD
 sfdx force:mdapi:deploy -d metadata -u FOIIASA -c -l RunLocalTests
 
-
+#sfdx force:mdapi:deploy -d metadata -u FOIIASA -l RunLocalTests
 
 echo "--- END DEPLOYMENT FOR: FOIIASA"
